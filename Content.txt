@@ -1,14 +1,24 @@
-Table:  
-
-PART 1:
-1. Git
-2. Jenkins
-3. Gitlab
-
-PART 2:
-
-1. Kubernetes
-2. HELM
-
-Advance : 
-ECS
+Developer
+    │
+    ▼
+Git
+    │
+    ▼
+GitLab
+    │
+    ▼
+Webhook
+    │
+    ▼
+Jenkins
+    │
+Build → Test → Security Scan
+    │
+Docker Build
+    │
+Push Image to Registry
+    │
+─────────────────────────────
+Deployment
+    ├── Kubernetes + Helm
+    └── Amazon ECS (Advanced)
